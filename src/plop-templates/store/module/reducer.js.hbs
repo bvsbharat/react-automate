@@ -1,0 +1,50 @@
+import {
+  {{constantCase name}}_REQUEST,
+  {{constantCase name}}_SUCCESS,
+  {{constantCase name}}_FAILURE,
+  {{constantCase name}}_ERROR_CLEANUP,
+  {{constantCase name}}_RESET,
+} from './types';
+
+let initialState = {
+  body: [],
+  loading: false,
+  error: false,
+  errors: {},
+  message: '',
+};
+
+export default function (state = initialState, action) {
+  switch (action.type) {
+    case {{constantCase name}}_REQUEST:
+      return {
+        ...state,
+        loading: true,
+      };
+    case {{constantCase name}}_SUCCESS:
+      return {
+        ...state,
+        body: action.payload.data,
+        loading: false,
+      };
+    case {{constantCase name}}_FAILURE:
+      return {
+        ...state,
+        loading: false,
+        error: true,
+        errors: action.payload,
+        message: action.payload.message,
+      };
+    case {{constantCase name}}_ERROR_CLEANUP:
+      return {
+        ...state,
+        error: false,
+        errors: {},
+        message: '',
+      };
+    case {{constantCase name}}_RESET:
+      return initialState;
+    default:
+      return state;
+  }
+}

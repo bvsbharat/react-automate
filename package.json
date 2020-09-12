@@ -1,18 +1,24 @@
 {
-  "name": "@bvsbharat/react-automate",
-  "version": "1.0.0",
+  "name": "react-automate-pro",
+  "version": "1.0.3",
   "description": "react gen for creating new component, pages, services",
-  "main": "index.js",
+  "main": "plopfile.js",
+  "bin": {
+    "rge": "plop"
+  },
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "rge": "plop"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/bvsbharat/react-automate.git"
   },
   "keywords": [
+    "plop",
     "react",
-    "gengenrator"
+    "generator",
+    "plop-react",
+    "react-component"
   ],
   "author": "bvs bharat kumar",
   "license": "ISC",
@@ -20,7 +26,8 @@
     "url": "https://github.com/bvsbharat/react-automate/issues"
   },
   "homepage": "https://github.com/bvsbharat/react-automate#readme",
-  "publishConfig": {
-    "registry": "https://npm.pkg.github.com/"
+  "dependencies": {
+    "handlebars": "^4.7.6",
+    "plop": "^2.7.4"
   }
 }

@@ -1,0 +1,23 @@
+import React, { useState } from 'react';
+import { connect } from 'react-redux';
+import styles from './{{pascalCase name}}.module.scss';
+
+const {{pascalCase name}} = (props) => {
+  const [state, setState] = useState('initialState');
+
+  return (
+    <div className={styles['{{camelCase name}}']}>
+      <p>{{pascalCase name}}</p>
+    </div>
+  );
+};
+
+const mapStateToProps = (state, ownProps) => ({
+
+});
+
+const mapDispatchToProps = (dispatch) => ({
+
+});
+
+export default connect(mapStateToProps, mapDispatchToProps)({{pascalCase name}});

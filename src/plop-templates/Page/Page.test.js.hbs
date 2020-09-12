@@ -1,0 +1,38 @@
+import React from 'react';
+import { mount } from 'enzyme';
+import { Provider } from 'react-redux';
+import configureMockStore from 'redux-mock-store';
+import { MemoryRouter } from 'react-router-dom';
+import {{pascalCase name}} from '../{{pascalCase name}}';
+
+describe('Designer', () => {
+  
+    it('Should render correctly', () => {
+       const store = {};
+
+        const wrapper = mount(
+            <Provider store={configureMockStore()(store)}>
+                <MemoryRouter initialEntries={[{ key: 'sampleKey' }]}>
+                    <{{pascalCase name}} />
+                </MemoryRouter>
+            </Provider>
+        );
+
+        expect(wrapper).toMatchSnapshot();
+    });
+
+    it('Should have the correct class name', ()=> {
+       const store = {};
+
+        const wrapper = mount(
+            <Provider store={configureMockStore()(store)}>
+                <MemoryRouter initialEntries={[{ key: 'sampleKey' }]}>
+                    <{{pascalCase name}} className="{{camelCase name}}" />
+                </MemoryRouter>
+            </Provider>
+        );
+
+      expect(wrapper.find('div').hasClass('{{camelCase name}}')).toBe(true);
+    });
+
+});
