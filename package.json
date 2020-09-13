@@ -1,17 +1,17 @@
 {
   "name": "react-automate-pro",
-  "version": "1.0.3",
+  "version": "1.2.2",
   "description": "react gen for creating new component, pages, services",
-  "main": "plopfile.js",
-  "bin": {
-    "rge": "plop"
-  },
+  "main": "index.js",
   "scripts": {
-    "rge": "plop"
+    "plop": "plop"
   },
   "repository": {
     "type": "git",
     "url": "git+https://github.com/bvsbharat/react-automate.git"
+  },
+  "bin": {
+    "rg": "./index.js"
   },
   "keywords": [
     "plop",
@@ -27,6 +27,7 @@
   },
   "homepage": "https://github.com/bvsbharat/react-automate#readme",
   "dependencies": {
+    "chalk": "^4.1.0",
     "handlebars": "^4.7.6",
     "plop": "^2.7.4"
   }

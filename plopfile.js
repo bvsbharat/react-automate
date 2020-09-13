@@ -11,25 +11,24 @@ module.exports = (plop) => {
     actions: [
       {
         type: "add",
-        path:
-          "src/components/templates/{{pascalCase name}}/{{pascalCase name}}.jsx",
-        templateFile: "src/plop-templates/Component/Component.jsx.hbs",
+        path: "src/components/{{camelCase name}}/{{pascalCase name}}.js",
+        templateFile: "src/plop-templates/Component/Component.js.hbs",
       },
       {
         type: "add",
         path:
-          "src/components/templates/{{pascalCase name}}/{{pascalCase name}}.test.js",
+          "src/components/{{pascalCase name}}/__tests__/{{pascalCase name}}-test.js",
         templateFile: "src/plop-templates/Component/Component.test.js.hbs",
       },
       {
         type: "add",
         path:
-          "src/components/templates/{{pascalCase name}}/{{pascalCase name}}.module.scss",
+          "src/components/{{pascalCase name}}/{{pascalCase name}}.module.scss",
         templateFile: "src/plop-templates/Component/Component.scss.hbs",
       },
       {
         type: "add",
-        path: "src/components/templates/{{pascalCase name}}/index.js",
+        path: "src/components/{{pascalCase name}}/index.js",
         templateFile: "src/plop-templates/Component/index.js.hbs",
       },
       {

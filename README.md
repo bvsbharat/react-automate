@@ -1,31 +1,57 @@
-# Generate a single-use component
+# React Automate Pro &middot; [![GitHub license](https://img.shields.io/badge/license-ISC-blue.svg)](https://github.com/bvsbharat/react-automate/blob/master/LICENSE) [![npm version](https://img.shields.io/npm/v/react-automate-pro.svg?style=flat)](https://www.npmjs.com/package/react-automate-pro) [![PRs Welcome](https://img.shields.io/badge/PRs-welcome-brightgreen.svg)](https://github.com/bvsbharat/react-automate/pulls)
 
-npm run generate page <name>
+## Installation
 
-# Generate page called Home
+```jsx
+npm i -g react-automate-pro
+```
 
-npm run generate page Home
+## Documentation
 
-# Generate a reusable component
+### Generate a single-use component
 
-npm run generate component <name>
+```jsx
+rg page <name>
+```
 
-# Generate a component called DogCard
+### Generate page called Home
 
-npm run generate component DogCard
+```jsx
+rg page Home
+```
 
-# Generate a custom hook
+### Generate a reusable component
 
-npm run generate hook <name>
+```jsx
+rg component <name>
+```
 
-# Generate a hook called useAsync
+### Generate a component called DogCard
 
-npm run generate hook useAsync
+```jsx
+rg component DogCard
+```
 
-# Generate a service
+### Generate a custom hook
 
-npm run generate service <name>
+```jsx
+rg hook <name>
+```
 
-# Generate a service called petApi
+### Generate a hook called useAsync
 
-npm run generate service petApi
+```jsx
+rg hook useAsync
+```
+
+### Generate a service
+
+```jsx
+rg service <name>
+```
+
+### Generate a service called petApi
+
+```jsx
+rg service petApi
+```
