@@ -1,8 +1,9 @@
 {
   "name": "react-automate-pro",
-  "version": "1.2.2",
+  "version": "2.0.2",
   "description": "react gen for creating new component, pages, services",
   "main": "index.js",
+  "private": false,
   "scripts": {
     "plop": "plop"
   },
@@ -11,7 +12,7 @@
     "url": "git+https://github.com/bvsbharat/react-automate.git"
   },
   "bin": {
-    "rg": "./index.js"
+    "rg": "index.js"
   },
   "keywords": [
     "plop",
@@ -30,5 +31,9 @@
     "chalk": "^4.1.0",
     "handlebars": "^4.7.6",
     "plop": "^2.7.4"
+  },
+  "devDependencies": {},
+  "publishConfig": {
+    "registry":"https://registry.npmjs.org/"
   }
 }
