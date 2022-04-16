@@ -1,6 +1,6 @@
 {
   "name": "react-automate-pro",
-  "version": "2.0.2",
+  "version": "2.0.3",
   "description": "react gen for creating new component, pages, services",
   "main": "index.js",
   "private": false,
