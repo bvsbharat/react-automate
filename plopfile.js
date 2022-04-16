@@ -1,5 +1,5 @@
 module.exports = (plop) => {
-  plop.setGenerator("component", {
+  plop.setGenerator("c", {
     description: "Create a reusable component",
     prompts: [
       {
@@ -41,7 +41,7 @@ module.exports = (plop) => {
         type: "append",
         path: "src/components/index.js",
         pattern: `/* PLOP_INJECT_IMPORT */`,
-        template: `import {{pascalCase name}} from './templates/{{pascalCase name}}';`,
+        template: `import {{pascalCase name}} from './{{pascalCase name}}';`,
       },
       {
         type: "append",
@@ -52,7 +52,7 @@ module.exports = (plop) => {
     ],
   });
 
-  plop.setGenerator("page", {
+  plop.setGenerator("p", {
     description: "Create a page",
     prompts: [
       {
@@ -104,7 +104,7 @@ module.exports = (plop) => {
     ],
   });
 
-  plop.setGenerator("service", {
+  plop.setGenerator("s", {
     description: "Create service",
     prompts: [
       {
@@ -140,7 +140,7 @@ module.exports = (plop) => {
     ],
   });
 
-  plop.setGenerator("hook", {
+  plop.setGenerator("h", {
     description: "Create a custom react hook",
     prompts: [
       {

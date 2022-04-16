@@ -11,47 +11,47 @@ npm i -g react-automate-pro
 ### Generate a single-use component
 
 ```jsx
-rg page <name>
+rg p <name>
 ```
 
 ### Generate page called Home
 
 ```jsx
-rg page Home
+rg p Home
 ```
 
 ### Generate a reusable component
 
 ```jsx
-rg component <name>
+rg c <name>
 ```
 
 ### Generate a component called DogCard
 
 ```jsx
-rg component DogCard
+rg c DogCard
 ```
 
 ### Generate a custom hook
 
 ```jsx
-rg hook <name>
+rg h <name>
 ```
 
 ### Generate a hook called useAsync
 
 ```jsx
-rg hook useAsync
+rg h useAsync
 ```
 
 ### Generate a service
 
 ```jsx
-rg service <name>
+rg s <name>
 ```
 
 ### Generate a service called petApi
 
 ```jsx
-rg service petApi
+rg s petApi
 ```
